@@ -50,28 +50,6 @@ The aesthetic emphasizes:
 
 The site uses subtle motion and responsive layout to function across different screen sizes, creating an intimate experience that honors what has been lost.
 
-## Technology Stack
-
-- **HTML** — structure and content
-- **CSS** — styling and design system
-- **JavaScript** — interaction logic and animations (GSAP or CSS transitions)
-
-## Project Structure
-
-```
-anthroarchive/
-├── index.html          # Main HTML structure
-├── styles/
-│   └── main.css        # Design system and styling
-├── scripts/
-│   └── main.js        # Animation and interaction logic
-├── assets/
-│   ├── images/         # Extinct species and habitat images
-│   ├── sounds/         # Ambient audio files
-│   └── texts/          # Fragment texts
-└── README.md           # This file
-```
-
 ## Timeline
 
 - **Week 1:** Storyboard and gather assets (images, texts, sounds)
