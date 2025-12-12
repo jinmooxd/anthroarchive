@@ -1,0 +1,400 @@
+/* Landing Page Styles - Motto-Inspired Design */
+
+/* ============================================
+   RESET & BASE STYLES
+   ============================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif;
+    background-color: #000000;
+    color: #FFFFFF;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* ============================================
+   BACKGROUND VIDEO
+   ============================================ */
+
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Behind everything */
+    opacity: 0.5; /* Adjust opacity (0.2-0.5 recommended) */
+    pointer-events: none; /* Allows clicks through video */
+    background-color: #000000; /* Black background while loading */
+}
+
+
+/* ============================================
+   HERO CAPSULE LAYOUT
+   ============================================ */
+
+.hero-capsule {
+    min-height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-color: transparent; /* Changed from #000000 to allow video to show */
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+        "top-left . top-right"
+        "hero-content hero-content hero-content"
+        "bottom-left bottom-center bottom-right";
+    gap: 2rem;
+    z-index: 1; /* Ensure content is above video */
+}
+
+/* Optional: Add dark overlay for better text contrast */
+.hero-capsule::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2); /* Adjust opacity as needed */
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* ============================================
+   TOP LEFT: LOGO/BRAND
+   ============================================ */
+
+.top-left {
+    grid-area: top-left;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 2; /* Ensure content is above video */
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Replace with your actual logo image if needed */
+.logo img {
+    height: auto;
+    max-width: 150px;
+}
+
+/* ============================================
+   TOP RIGHT: (Empty - removed per request)
+   ============================================ */
+
+.top-right {
+    grid-area: top-right;
+    /* Empty - decorative elements removed */
+}
+
+/* ============================================
+   MAIN CONTENT: CENTER-RIGHT
+   ============================================ */
+
+.hero-content {
+    grid-area: hero-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: 0;
+    padding-right: 2rem;
+    position: relative;
+    z-index: 2; /* Ensure content is above video */
+}
+
+/* ============================================
+   HERO HEADLINE
+   ============================================ */
+
+.hero-headline {
+    font-size: clamp(2rem, 5.5vw, 3.5rem);
+    line-height: 1.3;
+    font-weight: 300;
+    color: #FFFFFF;
+    margin-bottom: 4rem;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    max-width: 90%;
+}
+
+/* ============================================
+   ENTER EXPERIENCE LINK
+   ============================================ */
+
+.enter-experience-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: clamp(1.6rem, 4vw, 2.4rem);
+    font-weight: 400;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    position: relative;
+    padding-bottom: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.link-text {
+    position: relative;
+    z-index: 2;
+}
+
+.link-arrow {
+    position: relative;
+    z-index: 2;
+    font-size: 1.2em;
+}
+
+/* Animated Underline - Visible by default */
+.link-underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: calc(100% + 1rem);
+    background-color: #FFFFFF;
+    transform-origin: left center;
+    transform: scaleX(1);
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+
+/* On hover, underline animates from the very left (scaleX(0)) to the right (scaleX(1)) */
+.enter-experience-link:hover .link-underline {
+    transform: scaleX(0);
+    animation: underlineDrawFromLeft 0.5s cubic-bezier(0.25, 0.1, 0.25, 1.0) forwards;
+}
+
+/* On mouseleave, underline animates from right to left (scaleX(1) to scaleX(0)) */
+.enter-experience-link.mouseleave .link-underline {
+    transform-origin: right center;
+    animation: underlineDrawFromRight 0.5s cubic-bezier(0.25, 0.1, 0.25, 1.0) forwards;
+}
+
+@keyframes underlineDrawFromLeft {
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes underlineDrawFromRight {
+    0% {
+        transform: scaleX(1);
+        transform-origin: right center;
+    }
+    100% {
+        transform: scaleX(0);
+        transform-origin: right center;
+    }
+}
+
+.enter-experience-link:hover {
+    color: #FFFFFF;
+}
+
+.enter-experience-link:focus {
+    outline: 2px solid #FFFFFF;
+    outline-offset: 4px;
+}
+
+/* ============================================
+   BOTTOM BAR
+   ============================================ */
+
+.bottom-bar {
+    grid-area: bottom-left / 1 / bottom-right / 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    align-items: center;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+    z-index: 2; /* Ensure content is above video */
+}
+
+.bottom-left {
+    grid-column: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.brand-name {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    font-family: 'Space Grotesk', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.bottom-center {
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.tagline {
+    font-size: 0.875rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Space Grotesk', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.bottom-right {
+    grid-column: 3;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.date-info {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: 0.05em;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+@media (max-width: 1200px) {
+    .hero-capsule {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr auto;
+        grid-template-areas: 
+            "top-left"
+            "top-right"
+            "hero-content"
+            "bottom-bar";
+        padding: 1.5rem;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        margin: 0;
+        padding-right: 0;
+        align-items: flex-start;
+    }
+
+    .hero-headline {
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .bottom-bar {
+        grid-area: bottom-bar;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding-top: 1.5rem;
+    }
+
+    .bottom-left,
+    .bottom-center,
+    .bottom-right {
+        justify-content: center;
+        grid-column: 1;
+    }
+
+    .bottom-center {
+        order: -1; /* Tagline appears first on mobile */
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-capsule {
+        padding: 1rem;
+        gap: 1.5rem;
+    }
+
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    .hero-headline {
+        font-size: clamp(1.2rem, 6vw, 1.8rem);
+        margin-bottom: 1.5rem;
+    }
+
+    .enter-experience-link {
+        font-size: clamp(1rem, 4vw, 1.4rem);
+    }
+
+    .bottom-bar {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .brand-name,
+    .tagline,
+    .date-info {
+        font-size: 0.75rem;
+    }
+}
+
+/* ============================================
+   ACCESSIBILITY
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Focus visible for keyboard navigation */
+.enter-experience-link:focus-visible {
+    outline: 2px solid #FFFFFF;
+    outline-offset: 4px;
+}
+

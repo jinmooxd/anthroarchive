@@ -1,0 +1,292 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "Great Auk",
+      "habitat": "North Atlantic coasts & offshore islands",
+      "extinctDate": "1844",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Keulemans-GreatAuk.jpg",
+      "audio": "assets/audio/item-01.mp3",
+      "text": "A flightless seabird once abundant across the North Atlantic, driven extinct by centuries of intensive hunting.",
+      "blurLevel": 15,
+      "modalContent": {
+        "title": "Great Auk (Pinguinus impennis)",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/f/f8/Keulemans-GreatAuk.jpg"
+        ],
+        "description": "The Great Auk was a large, flightless seabird that bred on isolated cliffs and sea stacks scattered across the cold North Atlantic, from Newfoundland and Greenland to Iceland and northern Europe. It used its stubby wings as powerful flippers, diving deep to pursue schools of fish and crustaceans and returning to land only to nest in dense, noisy colonies. Its black-and-white plumage and upright stance made it superficially resemble a penguin, long before Europeans ever saw a penguin in the Southern Hemisphere.",
+        "details": "For millennia, Indigenous coastal communities hunted Great Auks in relatively sustainable ways. That balance collapsed when European ships began exploiting the birds as an easily accessible source of meat, fat, oil and feathers. Because the species laid just a single egg per year and relied on a limited number of nesting islands, intense harvesting quickly drove numbers downward. By the early 1800s, scientific collectors and museums were competing to obtain skins and eggs from the last remaining colonies. The final confirmed pair was killed on Eldey Island, Iceland, in 1844. In life, Great Auks helped transfer energy from offshore fish populations to coastal ecosystems; in extinction, they have become an emblem of how commercial extraction, colonial expansion and scientific curiosity can converge to erase a species from the world."
+      }
+    },
+    {
+      "id": 2,
+      "name": "Steller’s Sea Cow",
+      "habitat": "Coastal kelp forests of the Commander Islands",
+      "extinctDate": "1768",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Em_-_Hydrodamalis_gigas_model.jpg",
+      "audio": "assets/audio/item-02.mp3",
+      "text": "A massive herbivorous marine mammal discovered in 1741 and hunted to extinction within 27 years.",
+      "blurLevel": 15,
+      "modalContent": {
+        "title": "Steller’s Sea Cow (Hydrodamalis gigas)",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/5/5a/Em_-_Hydrodamalis_gigas_model.jpg"
+        ],
+        "description": "Steller’s Sea Cow was a gigantic relative of today’s manatees and dugongs, reaching an estimated 8–10 meters in length and weighing up to several tons. It lived in the frigid, nutrient-rich waters around the Commander Islands in the North Pacific, where dense kelp forests provided its main food. The animals moved slowly in small groups near the surface, browsing seaweed with their bristled lips and rarely submerging deeply, which made them unusually visible and accessible to people in small boats.",
+        "details": "When the species was first described by the naturalist Georg Wilhelm Steller in 1741, it was already confined to a tiny fragment of its former range. Russian fur hunters and sailors immediately recognized the Sea Cow as a convenient food source: easy to approach, unable to dive quickly, and yielding huge quantities of meat and fat that could be stored on long voyages. Intensive hunting began almost at once. Within less than three decades, the population was annihilated; the last credible reports date to 1768. In its ecosystem, Steller’s Sea Cow likely helped maintain kelp forest structure through grazing, much as large herbivores shape grasslands on land. Its rapid extinction after European contact highlights how large, slow-breeding marine megafauna are uniquely vulnerable to sudden pulses of human exploitation."
+      }
+    },
+    {
+      "id": 3,
+      "name": "Passenger Pigeon",
+      "habitat": "Eastern and Central North America",
+      "extinctDate": "1914",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Ectopistes_migratorius_ULaval_3.jpg",
+      "audio": "assets/audio/item-03.mp3",
+      "text": "Once billions strong, this species collapsed due to commercial hunting and habitat destruction.",
+      "blurLevel": 15,
+      "modalContent": {
+        "title": "Passenger Pigeon (Ectopistes migratorius)",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/f/f6/Ectopistes_migratorius_ULaval_3.jpg"
+        ],
+        "description": "Passenger pigeons were medium-sized, fast-flying birds that traveled in flocks so vast they could darken the sky for hours. They nested colonially in huge forest stands across eastern and central North America, depending on abundant acorns, beechnuts and other mast crops. Their social structure and breeding behavior were built around density: safety, courtship and feeding were all tied to moving as a synchronized multitude rather than as isolated pairs.",
+        "details": "As European settlers cleared old-growth forests for agriculture and timber, they destroyed much of the pigeons’ primary habitat. At the same time, new technologies—railroads, telegraphs and industrial-scale hunting with nets and shotguns—made it easy to locate and exploit flocks for the urban meat market. Because their reproduction relied on large, cohesive colonies, once numbers dipped below certain thresholds, local populations could not recover. By the late 19th century, wild flocks had collapsed. The last known individual, Martha, died in the Cincinnati Zoo in 1914. Ecologically, passenger pigeons had once played a major role in forest dynamics by consuming and redistributing seeds, fertilizing the soil and creating light gaps through their nesting activities. Their disappearance likely altered patterns of tree regeneration and wildlife communities, leaving a quieter, less pulse-driven forest behind."
+      }
+    },
+    {
+      "id": 4,
+      "name": "Caribbean Monk Seal",
+      "habitat": "Caribbean Sea and Gulf of Mexico",
+      "extinctDate": "2008",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Caribbean_monk_seals_New_York.jpg",
+      "audio": "assets/audio/item-04.mp3",
+      "text": "The only seal native to the Caribbean, eradicated through hunting and depletion of its food sources.",
+      "blurLevel": 15,
+      "modalContent": {
+        "title": "Caribbean Monk Seal (Neomonachus tropicalis)",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/6/6f/Caribbean_monk_seals_New_York.jpg"
+        ],
+        "description": "The Caribbean Monk Seal was a sleek, warm-water seal that once hauled out on sandy beaches, remote cays and coral islands throughout the Caribbean Sea, the Gulf of Mexico and the western Atlantic. Early accounts describe groups of seals resting in large numbers on undisturbed shores, feeding at sea on fish, cephalopods and crustaceans over nearby reefs and shallow banks. As apex predators, they occupied a high position in tropical marine food webs.",
+        "details": "Following European colonization, the seals were relentlessly hunted for their blubber, which was rendered into oil for lamps and lubrication, and for meat to provision ships. At the same time, commercial fishing reduced prey availability, while coastal development and human presence disturbed traditional haul-out and breeding sites. By the mid-20th century, sightings had become extremely rare. After decades without confirmed records, the species was officially declared extinct in 2008. In ecological terms, the loss of the Caribbean Monk Seal removed a native marine predator from tropical western Atlantic ecosystems, leaving fish communities instead shaped by human fisheries and a shifting cast of sharks and other large predators. Its absence underscores how colonial extraction and twentieth-century industrialization combined to dismantle even seemingly remote island faunas."
+      }
+    },
+    {
+      "id": 5,
+      "name": "Baiji (Yangtze River Dolphin)",
+      "habitat": "Yangtze River, China",
+      "extinctDate": "2006",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Baiji_Dolphin_killed_by_Charles_Hoy_1914.jpg",
+      "audio": "assets/audio/item-05.mp3",
+      "text": "A freshwater dolphin declared functionally extinct after decades of industrialization and pollution in the Yangtze.",
+      "blurLevel": 15,
+      "modalContent": {
+        "title": "Baiji — Yangtze River Dolphin (Lipotes vexillifer)",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/b/bc/Baiji_Dolphin_killed_by_Charles_Hoy_1914.jpg"
+        ],
+        "description": "The baiji was a pale, long-beaked freshwater dolphin that evolved in the turbid, sediment-rich waters of the Yangtze River. With small eyes and highly sophisticated echolocation, it navigated by sound rather than sight, hunting fish and other river animals in a dynamic, seasonally flooding system. Culturally, it was sometimes known as the \"Goddess of the Yangtze,\" woven into stories about protection and good fortune along China’s longest river.",
+        "details": "During the second half of the twentieth century, the Yangtze River was transformed by dams, dredging, shipping lanes, sand mining, chemical pollution and increasingly intensive fishing. Baiji were killed by boat collisions, entangled in rolling-hook and gill nets, displaced by noise and habitat alteration, and exposed to high levels of contaminants. Because they had low reproductive rates, populations could not keep pace with these combined pressures. A comprehensive survey in 2006, covering thousands of kilometers of river, failed to locate a single surviving individual; researchers concluded the species was functionally extinct. The baiji’s disappearance marks one of the clearest examples of a large vertebrate lost directly to rapid industrialization of a single river system, raising bleak questions about the future of other freshwater megafauna living in similarly engineered waterways."
+      }
+    },
+    {
+      "id": 6,
+      "name": "Tecopa Pupfish",
+      "habitat": "Tecopa Hot Springs, California",
+      "extinctDate": "1981",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Tecopa-pupfish.jpg",
+      "audio": "assets/audio/item-06.mp3",
+      "text": "A desert fish species wiped out after its hot-spring habitat was modified for human recreation.",
+      "blurLevel": 15,
+      "modalContent": {
+        "title": "Tecopa Pupfish (Cyprinodon nevadensis calidae)",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/e/e3/Tecopa-pupfish.jpg"
+        ],
+        "description": "The Tecopa Pupfish was a tiny, shimmering fish adapted to the extreme conditions of hot, alkaline springs in the Mojave Desert of California. It lived in shallow outflows where temperatures could approach 40°C, feeding on algae and small invertebrates and using the complex micro-habitats of the spring runs to avoid predators and tolerate fluctuating flows.",
+        "details": "In the 1950s and 1960s, Tecopa Hot Springs became a popular bathing and resort destination. To improve bathing pools and drain wastewater, developers channelized and re-routed parts of the spring system, altering water depth, flow and temperature. These changes, combined with the introduction of non-native fishes that competed with or preyed on the pupfish, rapidly degraded its already small habitat. By the late 1970s, the subspecies could no longer be found; it was officially declared extinct in 1981, one of the first animals removed from the U.S. Endangered Species list because it was gone. The Tecopa Pupfish illustrates how seemingly local decisions about recreation and water management can permanently erase an organism that existed nowhere else on Earth."
+      }
+    },
+    {
+      "id": 7,
+      "name": "Carolina Parakeet",
+      "habitat": "Eastern and Midwestern United States",
+      "extinctDate": "1918",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Conuropsis_carolinensis_%28Carolina_parakeet%29.jpg",
+      "audio": "assets/audio/item-07.mp3",
+      "text": "North America’s only native parrot, lost to habitat loss, hunting, and poisoning from agricultural chemicals.",
+      "blurLevel": 15,
+      "modalContent": {
+        "title": "Carolina Parakeet (Conuropsis carolinensis)",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/b/bd/Conuropsis_carolinensis_%28Carolina_parakeet%29.jpg"
+        ],
+        "description": "The Carolina Parakeet was a small, vividly colored parrot with green body feathers, a yellow head and an orange face. It lived in forests, river floodplains and swamps from the Great Lakes to the Gulf Coast, feeding on seeds, fruits and the kernels of various plants, including cockleburs and cultivated crops. Flocks were noisy and social, roosting and foraging together in the canopy.",
+        "details": "As European settlement expanded, logging and wetland drainage destroyed vast areas of the parakeet’s habitat. Farmers saw the birds as pests when they fed in orchards or cornfields, and they were shot or trapped in large numbers. Feathers were used in the millinery trade, while some birds were captured for the pet market. Their flocking instinct, which drew surviving individuals back to the cries of injured birds, made them particularly vulnerable during mass shootings and poisonings. The last known wild individuals disappeared in the early 1900s; the final captive bird died in 1918. Without these parrots, certain plants lost a seed disperser and consumer, and North American forests lost their only native parrot, replacing its calls with quieter agricultural landscapes and suburban parks."
+      }
+    },
+    {
+      "id": 8,
+      "name": "San Marcos Gambusia",
+      "habitat": "San Marcos River, Texas",
+      "extinctDate": "Early 1980s",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Mosquito_Fish_%28Gambusia_affinis%29.jpeg",
+      "audio": "assets/audio/item-08.mp3",
+      "text": "A small fish endemic to a single spring system, lost to pollution, habitat alteration, and invasive species.",
+      "blurLevel": 15,
+      "modalContent": {
+        "title": "San Marcos Gambusia (Gambusia georgei)",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/0/0e/Mosquito_Fish_%28Gambusia_affinis%29.jpeg"
+        ],
+        "description": "The San Marcos Gambusia was a tiny livebearing fish that occurred only in a short stretch of the San Marcos River in central Texas, a spring-fed system known for its clear, constant-temperature water. The fish occupied quiet backwaters and vegetated margins, feeding on small invertebrates and mosquito larvae and living alongside a suite of other spring-dependent species found nowhere else.",
+        "details": "Throughout the twentieth century, groundwater pumping, urban expansion, sewage inputs and recreational development altered both the quality and quantity of water emerging from the springs. Non-native fishes introduced for mosquito control or sport added additional predation and competition pressures. Because the San Marcos Gambusia had such a restricted range, even modest changes translated into existential threats. It was last documented in the early 1980s and formally declared extinct in 2021. Its loss represents not only the disappearance of a single fish, but a weakening of the ecological uniqueness of the San Marcos spring system, where endemic species are increasingly forced to survive in a river reshaped for tourism, landscaping and human water demands."
+      }
+    },
+    {
+      "id": 9,
+      "name": "Bramble Cay Melomys",
+      "habitat": "Bramble Cay, Torres Strait",
+      "extinctDate": "2015",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/0/06/Bramble-cay-melomys.jpg",
+      "audio": "assets/audio/item-09.mp3",
+      "text": "The first mammal declared extinct primarily due to human-driven climate change.",
+      "blurLevel": 15,
+      "modalContent": {
+        "title": "Bramble Cay Melomys (Melomys rubicola)",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/0/06/Bramble-cay-melomys.jpg"
+        ],
+        "description": "The Bramble Cay Melomys was a small rodent endemic to a single low-lying sand and coral island—Bramble Cay—at the northern tip of Australia’s Great Barrier Reef. It lived among sparse grasses and succulents on the cay’s surface, nesting in burrows and feeding on vegetation and washed-up seeds. Its entire global population occupied an area of only a few hectares just above sea level.",
+        "details": "Over recent decades, sea-level rise and more frequent storm surges associated with climate change repeatedly flooded Bramble Cay, eroding soil and destroying plant cover. As vegetation vanished, the melomys lost both food and shelter. Surveys in the early 2000s already showed drastic declines; by 2014, intensive trapping and camera efforts failed to detect any individuals. In 2015, Australian authorities concluded the species was extinct, citing human-driven climate change as the primary cause. Ecologically, the melomys had once acted as a seed consumer and potential disperser on the cay, linking marine-derived nutrients and plant communities. Its extinction starkly illustrates how small, isolated island species—already confined by geography—can be eliminated outright when global climate dynamics intersect with local vulnerability."
+      }
+    },
+    {
+      "id": 10,
+      "name": "Golden Toad",
+      "habitat": "Cloud forests of Monteverde, Costa Rica",
+      "extinctDate": "1989",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/8/87/Bufo_periglenes1.jpg",
+      "audio": "assets/audio/item-10.mp3",
+      "text": "A brilliantly colored toad whose disappearance is linked to climate shifts and disease.",
+      "blurLevel": 15,
+      "modalContent": {
+        "title": "Golden Toad (Incilius periglenes)",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/8/87/Bufo_periglenes1.jpg"
+        ],
+        "description": "The Golden Toad was a small amphibian endemic to a tiny region of high-elevation cloud forest near Monteverde, Costa Rica. Males were a striking, almost luminous orange, gathering in shallow forest pools during the brief breeding season, while females were darker and more mottled. The species depended on a delicate balance of cool temperatures and persistent mist that kept the forest floor moist.",
+        "details": "In the 1980s, a combination of factors undermined that balance. Changing climate patterns linked to global warming altered cloud formation and reduced dry-season moisture, while the emerging fungal disease chytridiomycosis swept through amphibian communities worldwide. Golden toad populations, once locally abundant, crashed almost overnight; the last confirmed individual was seen in 1989. Because the species’ range was so restricted, these regional climate shifts and disease outbreaks had nowhere to be buffered or diluted. In its ecosystem, the Golden Toad had been one of many insect-eating amphibians helping to control invertebrate populations and serving as food for higher predators. Its extinction has become an iconic example in climate change narratives, symbolizing how subtle atmospheric shifts in temperature and humidity can ripple into the disappearance of brightly visible, much-studied species."
+      }
+    },
+    {
+      "id": 11,
+      "name": "Pinta Island Tortoise",
+      "habitat": "Pinta Island, Galápagos",
+      "extinctDate": "2012",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/2/24/Pinta_Island_Tortoise_Lonesome_George_2008.jpg",
+      "audio": "assets/audio/item-11.mp3",
+      "text": "Known through its last individual, Lonesome George, whose subspecies was declared extinct in 2012.",
+      "blurLevel": 15,
+      "modalContent": {
+        "title": "Pinta Island Tortoise (Chelonoidis abingdonii)",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/2/24/Pinta_Island_Tortoise_Lonesome_George_2008.jpg"
+        ],
+        "description": "The Pinta Island Tortoise was one of several distinct giant tortoise lineages in the Galápagos Archipelago, each shaped by the climate and vegetation of its home island. On arid Pinta, tortoises browsed on cacti, shrubs and grasses, slowly moving across volcanic slopes and playing a key role in dispersing seeds and opening up thick vegetation through their foraging and trampling.",
+        "details": "In the nineteenth and early twentieth centuries, whaling ships and settlers hunted tortoises heavily for meat, while goats introduced to Pinta overgrazed the island’s vegetation, degrading habitat and competing with tortoises. By the mid-1900s, the subspecies appeared to be gone, until a single male—later named Lonesome George—was discovered in 1971. Despite decades of efforts to breed him with closely related tortoises, no viable offspring were produced. George’s death in 2012 marked the extinction of Chelonoidis abingdonii as a unique genetic lineage. Ecologically, Pinta lost a large herbivore that had helped engineer its plant communities for thousands of years. Symbolically, Lonesome George’s story has become a powerful reminder of how long-term exploitation and introduced species can end in the loneliness of a single, aging survivor."
+      }
+    },
+    {
+      "id": 12,
+      "name": "Western Black Rhinoceros",
+      "habitat": "Central and Western Africa",
+      "extinctDate": "2011",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/8/8c/South-western_black_rhinoceros_%28Diceros_bicornis_occidentalis%29_female.jpg",
+      "audio": "assets/audio/item-12.mp3",
+      "text": "A rhino subspecies whose decline was accelerated by climate stress, habitat loss, and poaching.",
+      "blurLevel": 15,
+      "modalContent": {
+        "title": "Western Black Rhinoceros (Diceros bicornis longipes)",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/8/8c/South-western_black_rhinoceros_%28Diceros_bicornis_occidentalis%29_female.jpg"
+        ],
+        "description": "The Western Black Rhinoceros was a browsing rhino subspecies once found across parts of Cameroon, Chad, the Central African Republic and surrounding regions. It lived in savannas and woody grasslands, using its prehensile upper lip to strip leaves, shoots and twigs from shrubs and trees. As a large herbivore, it helped shape vegetation structure and opened pathways used by other animals.",
+        "details": "Throughout the twentieth century, habitat loss from expanding agriculture and conflict combined with intense poaching driven by demand for rhino horn in international markets. Droughts and shifting rainfall patterns in the Sahel and Central African landscapes strained both wild vegetation and human livelihoods, sometimes pushing hunting pressure even higher. Conservation measures came too late and were poorly enforced in many parts of the subspecies’ range. By the early 2000s, only a handful of individuals remained; in 2011 the IUCN declared the Western Black Rhino extinct. Its disappearance removed a charismatic, ecosystem-engineering herbivore from already stressed African landscapes, illustrating how climate stress, economic inequality and global commodity chains can intersect on the body of a single animal."
+      }
+    },
+    {
+      "id": 13,
+      "name": "Woolly Mammoth",
+      "habitat": "Arctic tundra of Eurasia and North America",
+      "extinctDate": "c. 2000 BCE",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Woolly_mammoth_model_Royal_BC_Museum_in_Victoria.jpg",
+      "audio": "assets/audio/item-13.mp3",
+      "text": "A prehistoric giant often considered the flagship candidate for de-extinction.",
+      "blurLevel": 15,
+      "modalContent": {
+        "title": "Woolly Mammoth (Mammuthus primigenius)",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/9/9c/Woolly_mammoth_model_Royal_BC_Museum_in_Victoria.jpg"
+        ],
+        "description": "Woolly mammoths were large, shaggy elephants adapted to Ice Age steppe-tundra, with long curved tusks, small ears, insulating fat layers and a thick coat of hair. They roamed across northern Eurasia and North America in herds, migrating seasonally to track grasses and sedges and interacting with other Pleistocene megafauna such as steppe bison and cave lions.",
+        "details": "As the last glacial period ended, warming climates transformed open mammoth steppe into wetter tundra and boreal forest, reducing the grasslands that supported huge herds. At the same time, human hunters expanded into their range, adding direct predation and habitat disturbance. Most mainland populations vanished around 10,000 years ago, with a few isolated groups persisting on Arctic islands until roughly 2000 BCE. In life, mammoths helped maintain open grassland ecosystems by knocking down shrubs, compacting snow and cycling nutrients through dung. Today, frozen remains and preserved DNA have inspired de-extinction projects that aim to recreate mammoth-like elephants, raising ethical questions about whether resurrecting fragments of the Pleistocene can—or should—be part of future climate and rewilding strategies."
+      }
+    },
+    {
+      "id": 14,
+      "name": "Thylacine (Tasmanian Tiger)",
+      "habitat": "Tasmania, Australia",
+      "extinctDate": "1936",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/0/07/Thylacinus_cynocephalus_at_Hobart_Zoo_1928.jpg",
+      "audio": "assets/audio/item-14.mp3",
+      "text": "A striped marsupial predator recently targeted by de-extinction and genome-reconstruction projects.",
+      "blurLevel": 15,
+      "modalContent": {
+        "title": "Thylacine — Tasmanian Tiger (Thylacinus cynocephalus)",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/0/07/Thylacinus_cynocephalus_at_Hobart_Zoo_1928.jpg"
+        ],
+        "description": "The Thylacine was a carnivorous marsupial with a stiff tail, dog-like head and distinctive dark stripes along its back and rump, which inspired the nickname \"Tasmanian tiger.\" Once distributed across mainland Australia and New Guinea, by European contact it survived only in Tasmania, where it hunted wallabies, small mammals and birds, likely playing a role similar to that of a medium-sized canine predator.",
+        "details": "After sheep grazing expanded in Tasmania, thylacines were blamed—often without clear evidence—for livestock losses. The colonial government and private interests paid bounties for carcasses, driving intensive persecution. Habitat loss and competition with introduced dogs and foxes likely compounded these pressures. By the early 1900s the species was already rare; the last known individual died in Hobart Zoo in 1936. Today, reconstructed genomes from museum specimens and preserved tissue have turned the thylacine into a prime candidate in de-extinction research. Its story forces difficult questions: if humans deliberately eradicated a predator because it conflicted with settler economies, what obligations exist—if any—to recreate some version of that animal, and can a reconstructed species ever meaningfully replace the ecological role of the original?"
+      }
+    },
+    {
+      "id": 15,
+      "name": "Heath Hen",
+      "habitat": "Eastern United States (coastal plains & scrublands)",
+      "extinctDate": "1932",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Tympanuchus_cupido_cupido_3zz.jpg",
+      "audio": "assets/audio/item-15.mp3",
+      "text": "A prairie bird whose genetics are now studied as a potential candidate for restoration.",
+      "blurLevel": 15,
+      "modalContent": {
+        "title": "Heath Hen (Tympanuchus cupido cupido)",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/6/6d/Tympanuchus_cupido_cupido_3zz.jpg"
+        ],
+        "description": "The Heath Hen was a robust, ground-dwelling grouse closely related to the Greater Prairie-Chicken. It lived in coastal heathlands and scrubby barrens from New England down the Atlantic seaboard, where males gathered on leks in early spring to perform booming courtship displays, inflating orange throat sacs and stamping their feet in ritualized dances.",
+        "details": "As European settlers cleared and farmed coastal plains, burned heathlands, hunted the birds for food and allowed predators to increase, Heath Hen populations crashed. By the late 1800s, they survived only on Martha’s Vineyard, Massachusetts, where a refuge was created and numbers briefly rebounded before disease, harsh winters, inbreeding and wildfire drove them down again. The last known male, nicknamed Booming Ben, was observed until 1932, after which the subspecies was declared extinct. The Heath Hen has become a symbol of both early conservation efforts and their limits. Today, its remaining genetic material in museum specimens is studied in the context of de-extinction and assisted back-breeding, raising questions about how much of a lost bird can be recovered through its relatives and what it would mean to re-create a species tied so specifically to landscapes that have since been fragmented or urbanized."
+      }
+    },
+    {
+      "id": 16,
+      "name": "Pyrenean Ibex (Bucardo)",
+      "habitat": "Pyrenees Mountains, Spain and France",
+      "extinctDate": "2000",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Capra_pyrenaica_pyrenaica_MHNT_ART_39.jpg",
+      "audio": "assets/audio/item-16.mp3",
+      "text": "A mountain goat subspecies declared extinct in 2000 and briefly revived through cloning in 2003 — the first attempted de-extinction.",
+      "blurLevel": 15,
+      "modalContent": {
+        "title": "Pyrenean Ibex (Capra pyrenaica pyrenaica) — De-extinction Case Study",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/f/f7/Capra_pyrenaica_pyrenaica_MHNT_ART_39.jpg"
+        ],
+        "description": "The Pyrenean Ibex, or Bucardo, was a wild mountain goat adapted to the steep cliffs and rocky valleys of the Pyrenees between Spain and France. With powerful limbs and sweeping, backward-curving horns, it navigated sheer slopes to graze on grasses, herbs and shrubs in alpine and subalpine meadows, helping to shape plant communities through selective browsing and soil disturbance.",
+        "details": "Over centuries, hunting pressure for meat and trophies, competition with domestic livestock and habitat changes from forestry and agriculture steadily reduced Bucardo numbers. By the late twentieth century, only a handful of animals remained; the last known individual, a female named Celia, was found dead in 2000, officially marking the subspecies’ extinction. Using preserved tissue from Celia, scientists later cloned an ibex in 2003—the first time a recently extinct animal had been brought back to life, albeit briefly, as the clone died shortly after birth due to lung defects. The Pyrenean Ibex has since become a touchstone in debates about de-extinction: should we devote resources to recreating lost forms, or to protecting the many mountain species now facing similar pressures from hunting, land-use change and a rapidly warming climate?"
+      }
+    }
+  ]
+}

@@ -1,0 +1,344 @@
+/* Portfolio Page Main Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif;
+    background-color: #000000;
+    color: #FFFFFF;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Page Transition Styles */
+.page-transition {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    z-index: 10000;
+    pointer-events: none;
+    transition: height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.page-transition-white {
+    background-color: #FFFFFF; /* White */
+    z-index: 10000;
+}
+
+.page-transition-black {
+    background-color: #000000; /* Black */
+    z-index: 10001; /* Above white */
+}
+
+.page-transition-white.active {
+    height: 100%;
+}
+
+.page-transition-black.active {
+    height: 100%;
+}
+
+/* Site reveal animation - top to bottom */
+body.revealing .portfolio-container,
+body.revealing .portfolio-header {
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    animation: revealFromTop 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes revealFromTop {
+    0% {
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    100% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+.portfolio-container {
+    width: 100%;
+    min-height: 100vh;
+    padding-top: calc(2rem + 80px); /* Add space for fixed header */
+    padding-bottom: 2rem;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    background-color: #000000;
+}
+
+.portfolio-container.loaded {
+    opacity: 1;
+}
+
+/* Hide content during transition */
+body.transitioning .portfolio-container,
+body.transitioning .portfolio-header {
+    visibility: visible;
+    opacity: 1;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); /* Hide with clip-path for reveal animation */
+}
+
+/* Portfolio Header Navigation - Fixed at top */
+.portfolio-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000000;
+    z-index: 1000;
+    padding: 2rem;
+    border-bottom: 1px solid #FFFFFF; /* White separator line */
+}
+
+.portfolio-header .portfolio-nav {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; /* Equal spacing: left edge to Portfolio = between items = Manifesto to right edge */
+    width: 100%;
+}
+
+.nav-link {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-weight: 400;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    position: relative;
+    padding-bottom: 0.5rem;
+    cursor: pointer;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-link span:first-child {
+    position: relative;
+    z-index: 2;
+}
+
+.nav-link:hover {
+    color: #FFFFFF;
+}
+
+.nav-link.active {
+    font-weight: 700;
+}
+
+/* Animated Underline - Same as landing page */
+.nav-underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #FFFFFF;
+    transform-origin: left center;
+    transform: scaleX(1);
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+
+/* On hover, underline animates from the very left (scaleX(0)) to the right (scaleX(1)) */
+.nav-link:hover .nav-underline {
+    transform: scaleX(0);
+    animation: underlineDrawFromLeft 0.5s cubic-bezier(0.25, 0.1, 0.25, 1.0) forwards;
+}
+
+/* On mouseleave, underline animates from right to left (scaleX(1) to scaleX(0)) */
+.nav-link.mouseleave .nav-underline {
+    transform-origin: right center;
+    animation: underlineDrawFromRight 0.5s cubic-bezier(0.25, 0.1, 0.25, 1.0) forwards;
+}
+
+@keyframes underlineDrawFromLeft {
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes underlineDrawFromRight {
+    0% {
+        transform: scaleX(1);
+        transform-origin: right center;
+    }
+    100% {
+        transform: scaleX(0);
+        transform-origin: right center;
+    }
+}
+
+.portfolio-grid {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    position: relative;
+}
+
+/* Portfolio Item Styles - Staggered Spiral Layout */
+.portfolio-item {
+    position: relative;
+    width: 100%;
+    min-height: 500px;
+    max-width: 90%;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1.0), 
+                opacity 0.4s cubic-bezier(0.25, 0.1, 0.25, 1.0);
+    margin-bottom: 4rem;
+}
+
+/* Alternate items left and right for spiral effect */
+.portfolio-item:nth-child(odd) {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.portfolio-item:nth-child(even) {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+/* Vary widths for more dynamic flow */
+.portfolio-item:nth-child(3n+1) {
+    max-width: 85%;
+}
+
+.portfolio-item:nth-child(3n+2) {
+    max-width: 95%;
+}
+
+.portfolio-item:nth-child(3n) {
+    max-width: 80%;
+}
+
+.portfolio-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.portfolio-item:hover {
+    transform: translateY(-8px) scale(1.01);
+    z-index: 10;
+}
+
+.portfolio-item-image-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.portfolio-item-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(15px);
+    transition: filter 0.5s ease;
+}
+
+.portfolio-item:hover .portfolio-item-image {
+    filter: blur(10px);
+}
+
+.portfolio-item-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    color: white;
+    pointer-events: none;
+}
+
+.portfolio-item-name {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+    font-family: 'Space Grotesk', sans-serif;
+    color: #FFFFFF;
+}
+
+.portfolio-item-habitat {
+    font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+    font-weight: 300;
+    opacity: 0.9;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #FFFFFF;
+}
+
+.portfolio-item-date {
+    font-size: clamp(0.8rem, 1.2vw, 1rem);
+    font-weight: 300;
+    opacity: 0.7;
+    margin-top: 0.5rem;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #FFFFFF;
+}
+
+/* Error and Loading Messages */
+.no-items-message,
+.error-message {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+    font-weight: 300;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.error-message {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.error-message p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .portfolio-grid {
+        padding: 0 1rem;
+        gap: 4rem;
+    }
+
+    .portfolio-item {
+        min-height: 350px;
+        max-width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .portfolio-item-overlay {
+        padding: 1.5rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    /* Larger screens - more pronounced stagger */
+    .portfolio-item:nth-child(odd) {
+        margin-left: -5%;
+        padding-right: 5%;
+    }
+
+    .portfolio-item:nth-child(even) {
+        margin-right: -5%;
+        padding-left: 5%;
+    }
+}
+

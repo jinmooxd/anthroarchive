@@ -1,0 +1,95 @@
+/* Manifesto Page Styles */
+
+.manifesto-container {
+    width: 100%;
+    min-height: 100vh;
+    padding-top: calc(2rem + 80px); /* Add space for fixed header */
+    padding-bottom: 2rem;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+/* Hide content during transition */
+body.transitioning .manifesto-container,
+body.transitioning .portfolio-header {
+    visibility: visible;
+    opacity: 1;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); /* Hide with clip-path for reveal animation */
+}
+
+.manifesto-content {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.manifesto-text {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.manifesto-text h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 300;
+    margin-bottom: 2rem;
+    font-family: 'Space Grotesk', sans-serif;
+    color: #FFFFFF;
+}
+
+.manifesto-text p {
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    font-weight: 300;
+    line-height: 1.8;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    color: #FFFFFF;
+    margin-bottom: 1.5rem;
+}
+
+/* Page Transition Styles */
+.page-transition {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    z-index: 10000;
+    pointer-events: none;
+    transition: height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.page-transition-white {
+    background-color: #FFFFFF; /* White */
+    z-index: 10000;
+}
+
+.page-transition-black {
+    background-color: #000000; /* Black */
+    z-index: 10001; /* Above white */
+}
+
+.page-transition-white.active {
+    height: 100%;
+}
+
+.page-transition-black.active {
+    height: 100%;
+}
+
+/* Site reveal animation - top to bottom */
+body.revealing .manifesto-container,
+body.revealing .portfolio-header {
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    animation: revealFromTop 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes revealFromTop {
+    0% {
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    100% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+

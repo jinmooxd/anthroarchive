@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ARKive Reimagined - Explore the archive of lost species and habitats">
+    <title>ARKive Reimagined - Archive</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/portfolio.css">
+    <link rel="stylesheet" href="styles/loading.css">
+    <link rel="stylesheet" href="styles/modal.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/manifesto.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <h2 id="loader-text">ARKive Reimagined</h2>
+            <p>Entering the archive...</p>
+        </div>
+        <div class="loading-bar-container">
+            <div class="loading-bar" id="loading-bar"></div>
+        </div>
+    </div>
+
+    <!-- Transition Overlays -->
+    <div class="page-transition page-transition-white" id="page-transition-white"></div>
+    <div class="page-transition page-transition-black" id="page-transition-black"></div>
+
+    <!-- Main Portfolio Container -->
+    <main class="portfolio-container" id="portfolio-container">
+        <!-- Header Navigation -->
+        <header class="portfolio-header">
+            <nav class="portfolio-nav">
+                <a href="portfolio.html" class="nav-link active" id="portfolio-link">
+                    <span>Portfolio</span>
+                    <span class="nav-underline"></span>
+                </a>
+                <a href="manifesto.html" class="nav-link" id="manifesto-link">
+                    <span>Manifesto</span>
+                    <span class="nav-underline"></span>
+                </a>
+            </nav>
+        </header>
+        
+        <div class="portfolio-grid" id="portfolio-grid">
+            <!-- Portfolio items will be dynamically generated here -->
+        </div>
+    </main>
+
+    <!-- Modal Overlay -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal" id="modal">
+            <button class="modal-close" id="modal-close" aria-label="Close modal">×</button>
+            <div class="modal-content" id="modal-content">
+                <!-- Modal content will be dynamically generated here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="scripts/loading.js"></script>
+    <script src="scripts/portfolio.js"></script>
+    <script src="scripts/modal.js"></script>
+    <script src="scripts/scrollAnimations.js"></script>
+    <script src="scripts/audioHandler.js"></script>
+    <script src="scripts/pageTransition.js"></script>
+</body>
+</html>
+
